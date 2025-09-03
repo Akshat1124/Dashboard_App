@@ -1,5 +1,7 @@
 # AuraDash - Dashboard Application
 
+
+
 AuraDash is a responsive and modern dashboard application designed to visualize key metrics such as user activity, revenue trends, orders, and analytics in a clean and intuitive interface.
 
 ## Live Demo
@@ -69,6 +71,7 @@ https://dashboard-app-nine-jet.vercel.app/
 ---
 
 ## Screenshots of UI
+![Dashboard Preview](./assets/dashboard-preview.png)
 
 ### Dashboard Overview
 
