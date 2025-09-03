@@ -50,8 +50,7 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4 bg-cover bg-center" style={{ backgroundImage: `url('https://picsum.photos/1600/900?grayscale')`}}>
-      <div className="absolute inset-0 bg-black/60"></div>
+    <div className="min-h-screen flex items-center justify-center p-4 bg-dark-bg bg-gradient-to-br from-gray-900 via-dark-bg to-indigo-900/30 bg-[size:200%_200%] animate-gradient-shift">
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

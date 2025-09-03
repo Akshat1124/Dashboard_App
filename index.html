@@ -31,9 +31,16 @@
               'glow-primary': '0 0 20px rgba(0, 255, 153, 0.3)',
               'glow-secondary': '0 0 20px rgba(159, 122, 234, 0.4)',
             },
+            animation: {
+              'gradient-shift': 'gradient-shift 15s ease infinite',
+            },
             keyframes: {
               shimmer: {
                 '100%': { transform: 'translateX(100%)' },
+              },
+              'gradient-shift': {
+                '0%, 100%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
               },
             },
           },
