@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuraDash - Animated React Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'dark-bg': '#000000',
+              'dark-card': '#171717',
+              'dark-text': '#d1d5db',
+              'light-bg': '#f3f4f6',
+              'light-card': '#ffffff',
+              'light-text': '#1f2937',
+              'primary': '#4f46e5',
+              'primary-hover': '#4338ca',
+            },
+            boxShadow: {
+              'glow-primary': '0 0 20px rgba(0, 255, 153, 0.3)',
+              'glow-secondary': '0 0 20px rgba(159, 122, 234, 0.4)',
+            },
+            keyframes: {
+              shimmer: {
+                '100%': { transform: 'translateX(100%)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

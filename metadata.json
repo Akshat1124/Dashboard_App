@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AuraDash - Animated React Dashboard",
+  "description": "A modern, responsive, and beautifully animated dashboard application built with React, TypeScript, and Tailwind CSS. It features a glassmorphism login, dark/light modes, charts, and dynamic data fetching, all managed with React Context.",
+  "requestFramePermissions": []
+}
