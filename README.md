@@ -73,14 +73,7 @@ https://dashboard-app-nine-jet.vercel.app/
 ## Screenshots of UI
 ![Dashboard Preview](./assets/dashboard-preview.png)
 
-### Dashboard Overview
 
-![Dashboard UI](<img width="1898" height="970" alt="image" src="https://github.com/user-attachments/assets/fbc8eaf5-0f3d-4a67-bb3f-e17fe3172fc8" />
-)
-
-> *Screenshot: Main dashboard view displaying navigation sidebar, user greeting, key metrics, revenue chart, and traffic source pie chart.*
-
----
 
 ## Folder Structure Overview
 
