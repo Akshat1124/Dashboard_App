@@ -35,22 +35,17 @@ const Login: React.FC = () => {
     if (!validateForm()) return;
     
     try {
-      // Mock user login with static Indian user data, personalized to the user's example.
-      const user: User = {
-        id: 11,
-        name: 'Akshat Srivastava',
-        username: 'akshat.srivastava',
-        email: email,
-        address: { street: 'Lajpat Nagar', suite: 'B-Block', city: 'New Delhi', zipcode: '110024', geo: { lat: '28.5673', lng: '77.2496' } },
-        phone: '+91 98765 54321',
-        website: 'akshatsrivastava.dev',
-        company: { name: 'Innovate Delhi', catchPhrase: 'Creative digital solutions', bs: 'web and mobile development' }
-      };
-
+      const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const user: User = await response.json();
+      
       login(user);
       navigate('/dashboard');
     } catch (err) {
-      setError('Failed to login. Please check your credentials.');
+      setError('Failed to login. Please try again later.');
+      console.error("Login Error:", err);
     }
   };
   
@@ -115,6 +110,9 @@ const Login: React.FC = () => {
             </button>
           </div>
         </form>
+         <p className="mt-4 text-center text-xs text-gray-400">
+          <strong>Note:</strong> Any username and password will work. On login, user data is fetched from a public API for demonstration.
+        </p>
       </motion.div>
     </div>
   );
